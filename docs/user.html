@@ -1,0 +1,48 @@
+<!doctype HTML>
+<html>
+
+<head>
+  <script src="/js/utils/include.js"> </script>
+  <div style="display:none;" id=impo></div>
+  <script>
+    include("imports.html", "#impo");
+  </script>
+  <title>greortsol</title>
+  <script src="js/user.js" type="module"> </script>
+  <script src="js/libs/axios.min.js"> </script>
+  <script src= "js/header.js" type= "module"> </script>
+</head>
+
+<body>
+  <div id="page-header"></div>
+  <script>
+    include("header.html", "#page-header");
+  </script>
+  <div id="wrapper">
+    <div class="container" id="containerId">
+      <div class="row where" id="tit">
+        <span class="title"></span>
+      </div>
+      <div class="row">
+        <div class="col-md mid center">
+          <img class="avatar" alt="profile"></img>
+        </div>
+        <div class="col-md mid center">
+          <h3 class=numbers></h3>
+
+        </div>
+
+      </div>
+      <div class="row" id="errors">
+      </div>
+      <div class="anade">
+      </div>
+          <div id="foot"></div>
+          <script>
+            include("footer.html", "#foot");
+          </script>
+        </div>
+      </div>
+</body>
+
+</html>

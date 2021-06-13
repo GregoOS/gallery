@@ -1,0 +1,65 @@
+<!doctype HTML>
+<html>
+
+<head>
+  <script src="/js/utils/include.js"> </script>
+  <div style="display:none;" id=impo></div>
+  <script>
+    include("imports.html", "#impo");
+  </script>
+  <title>greortsol</title>
+  <script src="js/edit.js" type="module"> </script>
+  <script src="js/libs/axios.min.js"> </script>
+  <script src="js/header.js" type="module"> </script>
+</head>
+
+<body>
+  <div id="page-header"></div>
+  <script>
+    include("header.html", "#page-header");
+  </script>
+  <div id="wrapper">
+
+    <div class="container" id="containerId">
+      <div class="row where">
+        <a href="index.html"><img style="position: absolute;" src="./images/back.png" alt="back"
+            height="50em"></a><span>Edit</span>
+      </div>
+      <div class="row">
+        <div class="col-md"></div>
+        <div class="col-md inicio">
+          <form class="form-photo-edit" id="form-photo-edit">
+            <div class="form-group">
+              <label for="title">Title</label>
+              <input type="text" class="form-control" id="title" name="title" placeholder="Title" required> <br>
+              <label for="url">URL</label>
+              <input type="text" class="form-control" id="url" name="url" placeholder="URL" required> <br>
+              <label for="description">Description</label>
+              <textarea class="form-control" id="description" name="description" placeholder="Describe your image..."
+                rows="4" required></textarea><br>
+              <label for="visibility">Visibility</label>
+              <select required class="form-control" id="visibility" name="visibility">
+                <option value="Public">Public</option>
+                <option value="Private">Private</option>
+              </select>
+            </div>
+            <button style="width:100%" type="submit">Save</button>
+          </form>
+          <div style="margin-top: 2%;">
+            <button id="button-delete" style="width:100%">Delete</button>
+          </div>
+        </div>
+        <div class="col-md"></div>
+      </div>
+      <div id="errors"></div>
+      <div id="foot"></div>
+      <script>
+        include(" footer.html ", "#foot");
+      </script>
+    </div>
+  </div>
+
+
+</body>
+
+</html>

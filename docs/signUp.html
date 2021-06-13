@@ -1,0 +1,67 @@
+<!doctype HTML>
+<html>
+
+<head>
+<script src= "/js/utils/include.js"> </script>
+  <div style="display:none;" id=impo></div>
+  <script >
+    include ("imports.html", "#impo") ;
+  </script>
+  <title>greortsol</title>
+  <script src="js/register.js" type="module"></script>
+  <script src="js/libs/axios.min.js"> </script>
+  <script src= "js/header.js" type= "module"> </script>
+</head>
+
+<body>
+  <div id="page-header"></div>
+  <script>
+    include("header.html", "#page-header");
+  </script>
+  <div id="wrapper">
+
+    <div class="container" id="containerId">
+      <div class="row where">
+        <a href="signIn.html"><img style="position: absolute;" src="./images/back.png" alt="back"
+            height="50em"></a><span>Sing Up</span>
+      </div>
+      <div class="row inicio">
+        <form id="register-form" style="width:100%;">
+          <div class="row">
+          <div class="col-md">
+            <label for="firstName">Name</label>
+            <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Your name" required> <br>
+            <label for="lastName">Surmane:</label>
+            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Your name" required> <br>
+            <label for="telephone">Phone number:</label>
+            <input type="text" class="form-control" id="telephone" name="telephone" placeholder="Telephone" pattern="[0-9]{9}" required> <br>
+            <label for="avatarUrl">Avatar:</label>
+            <input type="text" class="form-control" id="avatarUrl" name="avatarUrl" placeholder="Avatar"> <br>
+          </div>
+          <div class="col-md">
+            <label for="username">Username:</label>
+            <input type="text" class="form-control" id="username" name="username" placeholder="Your username" required> <br>
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Your email" required> <br>
+            <label for="password">Password:</label>
+            <input type="password" class="form-control" id="password" name="password" placeholder="New password" required> <br>
+            <label for="passwordConfirm">Confirm Password:</label>
+            <input type="password" class="form-control" id="passwordConfirm" name="passwordConfirm" placeholder="Confirm password" required> <br>
+            
+          </div>
+          <button style="width:100%" type="submit">Sign Up</button>
+        </div>
+        </form>
+      </div>
+      <div class="row" id="errors"></div>
+      <div id="foot"></div>
+      <script>
+        include(" footer.html ", "#foot");
+      </script>
+    </div>
+    </div>
+    
+    
+    </body>
+    
+    </html>

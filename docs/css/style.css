@@ -1,0 +1,175 @@
+body{
+    background-color: #EAF8F9;
+    height: 100%;
+}
+
+.avatar{
+    width:10em;
+    height:10em;
+    border-radius: 10px;
+}
+
+.center{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* registro */
+.inicio{
+    background-color: rgb(190, 205, 231);
+    padding-left: 3em;
+    padding-top: 3em;
+    padding-right: 3em;
+    padding-bottom: 2em;
+    border-radius: 2em;
+}
+/*comments*/
+.comment{
+    background-color: white;
+    margin-top: 1em;
+    padding-left: 2em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    border-radius: 20px;
+    border:  2px solid #008CBA;
+}
+
+
+/*search*/
+.chico {
+    width: 60%;
+     display: inline;
+}
+.mid {
+    width: 100%;
+    text-align: center;
+}
+
+.res{
+    margin-left: 10em;
+    list-style: none;
+}
+
+.resBot{
+    color: #0099CC;
+    background: transparent;
+    border: 2px solid #0099CC;
+    border-radius: 6px;
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+    text-decoration: none;
+    border: 2px solid #008CBA;
+}
+.resBot:hover {
+    text-decoration: none;
+    background-color: #008CBA;
+    color: white;
+}
+
+
+/*header*/
+.cabecera{
+    padding: 10px;
+    color:white;
+    background-color: black;
+    height: auto;
+    border-radius: 10px;
+    display : flex;
+}
+.cabecera-int{
+    width: 100%;
+    align-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.user-name{
+    color:white;
+    float:left;
+}
+.user-name:hover{
+    color :white;
+}
+
+/*footer*/
+footer{
+    bottom: 0;
+}
+
+.pie{
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    color:white;
+    background-color: black;
+    height: auto;
+    border-radius: 10px;
+    text-align: center;
+    bottom:0px;
+    
+}
+.pie-int{
+    width: 100%;
+    align-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+
+/* Index*/
+.user-link{
+    color :black;
+}
+
+.user-link:hover{
+    color :black;
+}
+.where {
+    margin: 0.25em;
+    font-size: 3em;
+    
+}
+div.where span {
+    width: 100%;
+    text-align: center;
+    
+}
+.card{
+    background-color: white;
+    padding: 5%;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.photo-date {
+    float:right;
+    padding: 20%;
+}
+
+.photo-info{
+    height: 20%;
+}
+
+.photo-photo{
+    height: 60%;
+}
+.photo-subinfo{
+    height: 20%;
+}
+.photo-comment{
+    height: 40px;
+    width: 40px;
+    float:right;
+    margin-left:20px;
+}
+.photo-img{
+    width: 100%;
+}
+
